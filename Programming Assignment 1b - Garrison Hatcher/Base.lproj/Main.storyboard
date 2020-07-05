@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,64 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Programming_Assignment_1b___Garrison_Hatcher" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="SEC" translatesAutoresizingMaskIntoConstraints="NO" id="h4x-Tz-oOo">
+                                <rect key="frame" x="57" y="94" width="300" height="300"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4n-bj-n9S">
+                                <rect key="frame" x="182" y="417" width="50" height="30"/>
+                                <color key="tintColor" red="0.058571793140000002" green="0.1800179183" blue="0.34617048500000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Auburn"/>
+                                <connections>
+                                    <action selector="btnAuburn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N6S-mG-nwx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHZ-6Y-CS4">
+                                <rect key="frame" x="192" y="497" width="30" height="30"/>
+                                <color key="tintColor" red="0.99796789880000003" green="0.81625396009999995" blue="0.27839750050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="SEC"/>
+                                <connections>
+                                    <action selector="btnAuburn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="96s-Td-x5Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQ4-II-Umr">
+                                <rect key="frame" x="188" y="577" width="39" height="30"/>
+                                <color key="tintColor" red="0.62124723199999998" green="0.10622196640000001" blue="0.1951373518" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Bama">
+                                    <color key="titleColor" red="0.62124723199999998" green="0.10622196640000001" blue="0.1951373518" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAuburn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Zj-fT-jDe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zHZ-6Y-CS4" firstAttribute="top" secondItem="Q4n-bj-n9S" secondAttribute="bottom" constant="50" id="0uT-tw-zMu"/>
+                            <constraint firstItem="vQ4-II-Umr" firstAttribute="top" secondItem="zHZ-6Y-CS4" secondAttribute="bottom" constant="50" id="7jI-QE-mrr"/>
+                            <constraint firstItem="vQ4-II-Umr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="HXC-7L-L2S"/>
+                            <constraint firstItem="h4x-Tz-oOo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JeT-cf-K7z"/>
+                            <constraint firstItem="zHZ-6Y-CS4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ycc-1n-3Mu"/>
+                            <constraint firstItem="h4x-Tz-oOo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="fdw-Sy-AqK"/>
+                            <constraint firstItem="Q4n-bj-n9S" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oNm-Pw-UKl"/>
+                            <constraint firstItem="Q4n-bj-n9S" firstAttribute="top" secondItem="h4x-Tz-oOo" secondAttribute="bottom" constant="30" id="qLm-lK-1ea"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="h4x-Tz-oOo" id="VhC-Lg-AEP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="SEC" width="56" height="56"/>
+    </resources>
 </document>

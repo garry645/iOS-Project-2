@@ -49,6 +49,7 @@
 		4BB6CCFF248C1C75007D6166 /* Programming Assignment 1b - Garrison HatcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Programming Assignment 1b - Garrison HatcherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BB6CD03248C1C75007D6166 /* Programming_Assignment_1b___Garrison_HatcherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Programming_Assignment_1b___Garrison_HatcherUITests.swift"; sourceTree = "<group>"; };
 		4BB6CD05248C1C75007D6166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BB6CD11248C1E3E007D6166 /* Programming Assignment 1b - Garrison Hatcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Programming Assignment 1b - Garrison Hatcher.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 		4BB6CCE0248C1C73007D6166 /* Programming Assignment 1b - Garrison Hatcher */ = {
 			isa = PBXGroup;
 			children = (
+				4BB6CD11248C1E3E007D6166 /* Programming Assignment 1b - Garrison Hatcher.entitlements */,
 				4BB6CCE1248C1C73007D6166 /* AppDelegate.swift */,
 				4BB6CCE3248C1C73007D6166 /* SceneDelegate.swift */,
 				4BB6CCE5248C1C73007D6166 /* ViewController.swift */,
@@ -434,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Programming Assignment 1b - Garrison Hatcher/Programming Assignment 1b - Garrison Hatcher.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Programming Assignment 1b - Garrison Hatcher/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -442,6 +445,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "GarrisonSoftware.Programming-Assignment-1b---Garrison-Hatcher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -451,6 +455,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Programming Assignment 1b - Garrison Hatcher/Programming Assignment 1b - Garrison Hatcher.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Programming Assignment 1b - Garrison Hatcher/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -459,6 +464,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "GarrisonSoftware.Programming-Assignment-1b---Garrison-Hatcher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
